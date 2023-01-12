@@ -1,0 +1,2 @@
+- Last time we saw issue with parallel = 2
+- Let's fix it via Thread Local
