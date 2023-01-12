@@ -1,4 +1,4 @@
-package com.tta;
+package com.tta.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

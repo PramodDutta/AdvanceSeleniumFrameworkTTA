@@ -1,0 +1,1 @@
+{"uuid":"5706c91f-299f-4e2f-9e71-56f0db35be34","name":"com.tta.BaseTest.setUp","children":["0c0fb76d-6a17-4f66-857f-1b272b52dc39"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1673512095293,"stop":1673512100879}],"afters":[],"start":1673512095292,"stop":1673512100879}
