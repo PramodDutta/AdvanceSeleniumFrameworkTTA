@@ -1,6 +1,7 @@
 package com.tta;
 
 import com.tta.driver.DriverManagerTL;
+import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
 public class Test2 extends BaseTest{
@@ -14,6 +15,10 @@ public class Test2 extends BaseTest{
     @Test
     public void test2TL(){
         DriverManagerTL.getDriver().get("https://bing.com");
-        System.out.println( DriverManagerTL.getDriver().getCurrentUrl());
+        Assertions.assertThat(DriverManagerTL.getDriver().getCurrentUrl().toString())
+                .isNotBlank()
+                .isNotNull()
+                .contains("bing");
+//        System.out.println( DriverManagerTL.getDriver().getCurrentUrl());
     }
 }
