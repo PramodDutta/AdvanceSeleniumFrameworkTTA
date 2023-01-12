@@ -16,4 +16,10 @@ public class Test1 extends BaseTest{
         DriverManagerTL.getDriver().get("https://google.com");;
         System.out.println( DriverManagerTL.getDriver().getCurrentUrl());
     }
+
+    @Test
+    public void test2TL(){
+        DriverManagerTL.getDriver().get("https://duckduckgo.com");;
+        System.out.println( DriverManagerTL.getDriver().getCurrentUrl());
+    }
 }

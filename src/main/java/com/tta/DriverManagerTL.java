@@ -9,7 +9,8 @@ import java.util.Objects;
 
 public class DriverManagerTL {
 
-    private static WebDriver driver;
+    //private static WebDriver driver;
+    //private static WebDriver driver; // Fix
     private static final ThreadLocal<WebDriver> dr = new ThreadLocal<>();
 
     public static void setDriver(WebDriver driverRef){
@@ -25,14 +26,14 @@ public class DriverManagerTL {
     }
 
     public static void init() {
-        if (Objects.isNull(driver)){
-            driver = new ChromeDriver();
+        if (Objects.isNull(DriverManagerTL.getDriver())){
+            WebDriver driver = new ChromeDriver();
             setDriver(driver);
         }
     }
 
     public static void down() {
-        if (Objects.nonNull(driver)) {
+        if (Objects.nonNull(DriverManagerTL.getDriver())) {
             getDriver().quit();
             unload();
         }
