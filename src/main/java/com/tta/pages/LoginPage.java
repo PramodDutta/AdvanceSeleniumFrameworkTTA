@@ -1,35 +1,34 @@
 package com.tta.pages;
 
 
+import com.tta.base.BasePage;
 import com.tta.driver.DriverManagerTL;
 import com.tta.utils.PropertyReaderOptimized;
 import org.openqa.selenium.By;
 
-public class LoginPage {
+public class LoginPage extends BasePage {
 
-    public LoginPage(){
-
+    public LoginPage() {
+        super();
     }
+
     // Page Locators
-    By username = By.id("login-username" );
-    By password = By.id("login-password" );
-    By signButton = By.id("js-login-btn" );
+    By username = By.id("login-username");
+    By password = By.id("login-password");
+    By signButton = By.id("js-login-btn");
 
     // Page Actions
 
     public LoginPage loginToVWO() throws Exception {
-        DriverManagerTL.getDriver().findElement(username).sendKeys( PropertyReaderOptimized.readKeyO("username"));
-        DriverManagerTL.getDriver().findElement(password).sendKeys( PropertyReaderOptimized.readKeyO("password"));
-        DriverManagerTL.getDriver().findElement(signButton).click();
+        enterInput(username, PropertyReaderOptimized.readKeyO("username"));
+        enterInput(password, PropertyReaderOptimized.readKeyO("password"));
+        clickElement(signButton);
         return this;
     }
 
-    public DashboardPage afterLogin(){
+    public DashboardPage afterLogin() {
         return new DashboardPage();
     }
-
-
-
 
 
 }

@@ -3,9 +3,9 @@
 <suite name="All Test Suite">
     <test thread-count="2" verbose="2" parallel="methods" preserve-order="true" name="TTAAdvanceSelFramework">
         <classes>
-            <class name="com.tta.Test1">
+            <class name="com.tta.learn.threadlocalexplain.Test1">
             </class>
-            <class name="com.tta.Test2">
+            <class name="com.tta.learn.threadlocalexplain.Test2">
             </class>
         </classes>
     </test>

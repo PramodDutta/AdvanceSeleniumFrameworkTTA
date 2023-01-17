@@ -1,13 +1,11 @@
-package com.tta;
+package com.tta.learn.threadlocalexplain;
 
+import com.tta.basetest.BaseTest;
 import com.tta.driver.DriverManagerTL;
-import com.tta.utils.PropertyReader;
 import com.tta.utils.PropertyReaderOptimized;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class Test1 extends BaseTest{
+public class Test1 extends BaseTest {
 
 //
 //    @Test

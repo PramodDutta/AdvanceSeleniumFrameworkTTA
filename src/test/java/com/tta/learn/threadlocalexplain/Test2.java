@@ -1,10 +1,11 @@
-package com.tta;
+package com.tta.learn.threadlocalexplain;
 
+import com.tta.basetest.BaseTest;
 import com.tta.driver.DriverManagerTL;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
-public class Test2 extends BaseTest{
+public class Test2 extends BaseTest {
 //    @Test
 //    public void test2(){
 //        DriverManager.init();

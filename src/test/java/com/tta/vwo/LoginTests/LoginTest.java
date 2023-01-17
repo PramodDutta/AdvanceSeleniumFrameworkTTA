@@ -1,6 +1,6 @@
 package com.tta.vwo.LoginTests;
 
-import com.tta.BaseTest;
+import com.tta.basetest.BaseTest;
 import com.tta.driver.DriverManagerTL;
 import com.tta.pages.DashboardPage;
 import com.tta.pages.LoginPage;
