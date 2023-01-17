@@ -1,7 +1,12 @@
-- Last time we saw issue with parallel = 2
-- Let's fix it via Thread Local
+Selenium Automation Framework Starter
 
-But If 2 Test in Test 2 it will fail , Lets fix it
-
-- Protect the Base Test
-- Add Property Support
+- Java, Selenium, TestNG
+- Maven, AssertJ, POM
+- Thread Local Support → Thread Safety
+- Allure Report
+- Excel Sheet for Test Data → Data Provider
+- Read the username and password from Properties- 
+- TestNG, @Test, Before and After Method.
+- Cloud Grids
+- SonarLint, Java > 8
+- Run Local and on Selenoid Integration
