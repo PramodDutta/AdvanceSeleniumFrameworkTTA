@@ -1,4 +1,4 @@
-Selenium Automation Framework Starter
+# Selenium Automation Framework Starter
 
 - Java, Selenium, TestNG
 - Maven, AssertJ, POM
